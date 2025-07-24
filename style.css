@@ -49,6 +49,16 @@ p {
     font-size: 16px;
 }
 
+.primary-btn-2 {
+    background-color: #e95a08;
+    padding: 15px 10px;
+    border: none;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 600;
+    font-size: 16px;
+}
+
 
 /* navbar styles  */
 .navbar {
@@ -130,21 +140,136 @@ h6 {
 /* plants lover styles  */
 .lover-container {
     display: flex;
-    gap: 60px;
+    gap: 80px;
     margin-top: 150px;
 }
 
-.lover-container img {
-    width: 100%;
+.lover-badge img {
+    width: 285px;
 }
 
-.lover-content ul{
+.lover-images {
+    position: relative;
+}
+
+.lover-badge {
+    position: absolute;
+    right: -110px;
+    top: -120px;
+}
+
+.lover-content {
+    margin-top: 80px;
+}
+
+.lover-content ul {
     line-height: 30px;
     padding-left: 20px;
 }
 
 .lover-content h3 {
     margin-bottom: 25px;
+}
+
+/* deals styles  */
+.deals {
+    text-align: center;
+}
+
+.deals p {
+    padding: 0 120px;
+}
+
+.deals-container {
+    display: flex;
+    gap: 30px;
+}
+
+.deals-left-image {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.deals-left-image1 p,
+.deals-left-image2 p {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+.deals-right-image p {
+    color: #fff;
+    font-size: 1.75rem;
+    text-decoration: underline;
+}
+
+.deals-right-image h5 {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.deals-left-image1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./assets/deal-ana.png);
+    width: 367px;
+    height: 201px;
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.deals-left-image2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./assets/deal-bloom.png);
+    width: 367px;
+    height: 201px;
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.deals-right-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./assets/deal-zabo.png);
+    width: 753px;
+    height: 423px;
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+/* join styles  */
+.join{
+    position: relative;
+}
+.join img{
+    width: 100%;
+}
+.join-container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.join-container h3{
+    font-size: 3rem;
+    color: #fff;
+}
+.join-container input{
+    width: 644px;
+    padding: 15px 30px;
+    margin-top: 20px;
 }
 
 /* responsive for mobile  */
@@ -158,8 +283,15 @@ h6 {
     /* navbar styles  */
     .navbar-menu li:nth-child(1),
     .navbar-menu li:nth-child(2),
-    .navbar-menu li:nth-child(3) {
+    .navbar-menu li:nth-child(3),
+    .lover-badge {
         display: none;
+    }
+
+        {
+        position: absolute;
+        right: -110px;
+        top: -120px;
     }
 
     .navbar {
@@ -175,7 +307,9 @@ h6 {
         margin: 0 15px;
     }
 
-    .banner-container h1, .plants-texts, .lover-content h3 {
+    .banner-container h1,
+    .plants-texts,
+    .lover-content h3 {
         font-size: 2rem;
         margin-top: 20px;
     }
@@ -190,7 +324,39 @@ h6 {
     /* plants lover styles  */
     .lover-container {
         flex-direction: column;
-        margin-top: 50px;
+        margin-top: 60px;
         padding: 15px;
+    }
+
+    .lover-images img {
+        width: 100%;
+    }
+
+    .lover-content {
+        margin-top: -80px;
+    }
+
+    /* deals style  */
+    .deals-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .deals p {
+        padding: 0 20px;
+        margin-bottom: 30px;
+    }
+
+    .deals-right-image {
+        width: 367px;
+        height: 201px;
+    }
+
+    .deals-right-image p {
+        font-size: 1rem;
+    }
+
+    .deals-right-image h5 {
+        font-size: 1.25rem;
     }
 }
