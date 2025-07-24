@@ -126,21 +126,25 @@ h6 {
     font-size: 22px;
     font-weight: 700;
 }
+
 /* animation for lover badge  */
 @keyframes trusted-badge {
-    0%{
+    0% {
         opacity: 0;
         transform: translateX(-20px);
     }
-    50%{
+
+    50% {
         opacity: .7;
         transform: translateX(-10px);
     }
-    100%{
+
+    100% {
         opacity: 1;
         transform: translateX(0px);
     }
 }
+
 /* plants lover styles  */
 .lover-container {
     display: flex;
@@ -426,7 +430,6 @@ h6 {
     /* footer styles  */
     .footer-container {
         grid-template-columns: 1fr;
-        text-align: center;
         gap: 50px;
         padding: 0 30px;
     }
@@ -437,7 +440,4 @@ h6 {
         gap: 30px;
     }
 
-    .footer-right {
-        text-align: center;
-    }
 }
